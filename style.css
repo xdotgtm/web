@@ -1,123 +1,142 @@
-* {
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #0F0F0F; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #020408;
-    background-size: cover;
-    justify-content: center;
+.box a {
+    color: #e0e0e0; /* White links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Optional: Adjust the font size */
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-grow: 1;
+.box a:visited {
+    color: #e0e0e0; /* Keep visited links white */
 }
 
-.container .card {
-    position: relative;
-    width: 672px;
-    height: 358px;
-    background: rgba(255, 255, 255, 0.25);
-    background-image: url(imageBefore.png);
-    background-repeat: no-repeat;
-    border-radius: 18px;
-    overflow: hidden;
-    margin-top: 350px; /* Position der Karte */
+.box a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #4CAF50; /* Change color on hover (green) */
 }
 
-.container .card::before {
-    content: '';
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    background: radial-gradient(var(--clr), transparent, transparent);
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-    transition: opacity 0.5s, top 0s, left 0s;
-    pointer-events: none;
-}
-
-.container .card:hover::before {
-    opacity: 1;
-}
-
-.container .card::after {
-    content: '';
-    position: absolute;
-    border-radius: 18px;
-    inset: 1px;
-    background-image: url(imageAfter.png);
-}
-
-.image {
-        position: absolute;
-        width: 672px;
-        height: 358px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    padding-bottom: 70px;
-}
-
-.btn {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    background: #1c2a44;
-    width: 160px;
-    padding: 20px;
+#navigation {
+    background-color: #262626;
+    padding: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigation a {
+    color: #e0e0e0;
+    padding: 14px 20px;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 10px;
+    display: inline-block;
+}
+
+#navigation a:hover {
+    background-color: #3d3d3d;
+    border-radius: 4px;
+}
+
+/* Grid container for the content boxes */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: auto; /* auto-adjusting rows */
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Box styling */
+.box {
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Download button style */
+.download-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition-duration: 0.3s;
-    transition-property: box-shadow, transform;
-    margin-bottom: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto;
 }
 
-.btn:first-of-type {
-    background-color: #0A0A0A;
-}
-
-.btn:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+.download-btn:hover {
+    background-color: #45a049;
     transform: scale(1.1);
 }
 
-.labels {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-    position: absolute; 
-    top: 200px; 
-    width: 100%; 
-    text-align: center;
+/* Discord button style */
+.discord-btn {
+    padding: 10px 20px;
+    background-color: #7289DA;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto;
 }
 
-.label {
-    font-family: 'Franklin Gothic gras', 'Arial Narrow', Arial, sans-serif;
-    font-size: 75px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
+.discord-btn:hover {
+    background-color: #5b6eae;
+    transform: scale(1.1);
 }
+
+/* Youtube button style */
+.youtube-btn {
+    padding: 10px 20px;
+    background-color: #eb0f0f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+.youtube-btn:hover {
+    background-color: #eb0f0f;
+    transform: scale(1.1);
+}
+
+/* Phantom button style */
+.phantom-btn {
+    padding: 10px 20px;
+    background-color: #686161;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+.phantom-btn:hover {
+    background-color: #686161;
+    transform: scale(1.1);
+}
+/* aa*/
