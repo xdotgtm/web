@@ -1,25 +1,24 @@
-/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0F0F0F; /* Dark background */
-    color: #e0e0e0; /* Light text for contrast */
+    background-color: #0F0F0F;
+    color: #e0e0e0; 
 }
 
 .box a {
-    color: #e0e0e0; /* White links */
-    text-decoration: none; /* Remove underline */
-    font-size: 18px; /* Optional: Adjust the font size */
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;/
 }
 
 .box a:visited {
-    color: #e0e0e0; /* Keep visited links white */
+    color: #e0e0e0;
 }
 
 .box a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: #4CAF50; /* Change color on hover (green) */
+    text-decoration: underline;
+    color: #4CAF50;
 }
 
 #navigation {
@@ -43,18 +42,16 @@ body {
     border-radius: 4px;
 }
 
-/* Grid container for the content boxes */
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: auto; /* auto-adjusting rows */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     gap: 20px;
     padding: 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Box styling */
 .box {
     background-color: #2e2e2e;
     border-radius: 8px;
@@ -68,7 +65,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Download button style */
 .download-btn {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -86,7 +82,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Discord button style */
 .discord-btn {
     padding: 10px 20px;
     background-color: #7289DA;
@@ -104,7 +99,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Youtube button style */
 .youtube-btn {
     padding: 10px 20px;
     background-color: #eb0f0f;
@@ -122,7 +116,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Phantom button style */
 .phantom-btn {
     padding: 10px 20px;
     background-color: #686161;
@@ -139,4 +132,3 @@ body {
     background-color: #686161;
     transform: scale(1.1);
 }
-/* aa*/
