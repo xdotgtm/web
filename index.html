@@ -1,27 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BlackHole X</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-    </head>
-    <body>
-        <div class="labels">
-            <a class="label">BlackHole X</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackHole X</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5717533006121970"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navigation">
+        <a href="#Executor">Executor</a>
+        <a href="#Youtube">Youtube</a>
+        <a href="#Discord">Discord</a>
+        <a href="#Phantom">Phantom</a>
+    </div>
+
+    <div id="grid-container">
+        <div class="box">
+            <h2>BlackHole X</h2>
+            <p>BlackHole X is a powerful and user-friendly Roblox external scripting utility designed to enhance your experience on the platform</p>
+            <input onclick="window.open('https://github.com/xdotgtm/blackhole-x.github.io/releases/download/h/BlackHole-X.zip')" type="button" class="download-btn" value="DOWNLOAD"/>
         </div>
-        <div class="container">
-            <div class="card" style="--clr:#fff;" data-tilt>
-                <image class="iframe-editor" src="executor.png" ></image>
-            </div>
-            <div class="buttons">
-                <a href="#" class="btn" onclick="location.href='https://github.com/xdotgtm/BlackHole-X/raw/main/BlackHoleX.zip'">Download</a>
-                <a href="#" class="btn" onclick="location.href='https://discord.gg/Z2QXtdWBmz'">Discord</a>
-            </div>
+        <div class="box">
+            <h2>Youtube</h2>
+            <p>View our YouTube channel today!</p>
+            We hope you enjoy our videos
+            <input type="button" class="youtube-btn" value="View YouTube Channel" onclick="window.open('https://www.youtube.com/@Xdottt', '_blank')"/>
         </div>
-        <script>
-            let card = document.querySelectorAll('.card');
+        <div class="box">
+            <h2>Join our Discord</h2>
+            <p>Join our community today!</p>
+            We will do our best to help you out
+            <input type="button" class="discord-btn" value="Join Discord" onclick="window.open('https://discord.gg/Z2QXtdWBmz', '_blank')"/>
+        </div>
+        <div class="box">
+            <h2>Phantom</h2>
+            <p>Join our partner Phantom!</p>
+            You wont regret it
+            <input type="button" class="phantom-btn" value="Phantom Executor" onclick="window.open('https://discord.gg/X3KYvJ9T7h', '_blank')"/>
+        </div>
+    </div>
+</body>
+</html>;
             card.forEach(card =>{
                 card.onmousemove = function(e){
                     let x = e.pageX - card.offsetLeft;
